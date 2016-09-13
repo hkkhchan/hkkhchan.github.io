@@ -10,3 +10,7 @@
 1. 用svg 來展示大logo
 1. skillset 可以用progress bar之類來展示
 1. 加個go to top的button
+
+### 重大更新:
+1. 14/9正式上傳
+
