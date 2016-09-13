@@ -1,0 +1,110 @@
+/* Customize.css for Foundation Theme */
+
+@font-face
+{
+	font-family: Cantarell;
+	src: url('..\font\Cantarell-Regular.ttf');
+}
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+.indented {
+	text-indent: 30px;
+}
+.centered {
+	text-align: center;
+}
+body {
+	font-family: Cantarell, Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}	
+/*h1, h2, h3, h4, h5, h6 {
+	font-family: Cambria, Georgia, serif;
+}*/
+h6{
+	text-indent: 15px;
+}
+#header-title {
+	text-align: center; 
+	text-transform:uppercase; 
+	color: #777777;
+	letter-spacing: 20px;
+}
+
+.personal-pic {
+	border: 2px solid #777777;
+	-webkit-clip-path:circle(42% at 48% 45%);
+}
+.personal-pic-large {
+	margin: 10px 0 20px 15px;
+	-webkit-clip-path:circle(42% at 48% 45%);
+}
+.skills-list {
+	text-align: center;
+}
+.skill{
+	
+	display: inline-block;
+    margin: 0px 20px;
+    /* for ie7 */
+    zoom: 1;
+    *display: inline;
+    font-size: 1.6em;
+}
+.year {
+	margin: 0 0 0 1.25em;
+}
+.title {
+	margin: 0 0 0 .938em;
+	font-weight: bold;
+}
+.descriptions {
+	margin: .938em 0 .938em 2.813em;
+}
+.entry {
+	margin-top: 1.25em;
+}
+ul.descriptions {
+    list-style-type: none;
+}
+ul.descriptions li {
+	margin: 0 0 0 1em;
+	text-indent: -2.9em; 
+}
+ul.descriptions li:before
+{
+    content: '\2727';
+    margin: 0 1em;    /* any design */
+}
+.portfolio li {
+	margin: 0 .5em .5em 0; 
+}
+.sm-pad {
+	padding: 0 0 0 1em;
+}
+.footer-pad {
+	padding-bottom: 2em;
+}
+.sm-cap{
+	font-variant: small-caps;
+}
+.intro{
+	font-size:120%;
+	margin: .75em 0;
+}
+h5{
+	margin-left:0.8em;
+}
+.light-topic{
+	background-color: rgba(255,255,255,0.7);
+}
+.center{
+	text-align: center;
+}
+.social_icon{
+	max-width:48px;
+}
+#header-text a{
+	margin-right:25px;
+}
