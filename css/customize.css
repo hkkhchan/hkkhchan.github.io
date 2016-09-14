@@ -159,4 +159,13 @@ h5{
 		font-size:1em;
 		margin:0 5px;
 	}
+	.descriptions li{
+		font-size:80%;
+	}
+	h5{
+		font-size:1em;
+	}
+	h6{
+		font-size:0.8em;
+	}
 }
