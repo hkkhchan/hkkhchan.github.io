@@ -3,24 +3,21 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Kenneth Chan Kin Hei, Programmer</title>
-
-  
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/customize.css">
-  
-
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/90141f997e.js"></script>
   <script src="js/vendor/custom.modernizr.js"></script>
-
+  <script src="js/custom.js"></script>
 </head>
 <body>
 	<!-- HEADER -->
-	
 	<div class="row">
-		<div class="large-12 columns">
-			<img style="" src="img/sc_park.jpg" />
+		<div class="large-12 columns padding_0">
+			<img id="img_cover" src="img/sc_park.jpg" />
 		</div>
 	</div>
 	<div class="row">
@@ -102,8 +99,8 @@
 				<li class="skill">Django</li>
 				<li class="skill">MongoDB</li>
 				<li class="skill">Yii/Drupal/Wordpress</li>
-				<li class="skill">Bootstrap/Foundation</li>
-				<li class="skill">JQuery/AngularJS</li>
+				<li class="skill">JQuery/Bootstrap</li>
+				<li class="skill">AngularJS</li>
 				<li class="skill">HTML5/CSS/AJAX</li>
 				<li class="skill">VBA/Batch script language/GIT</li>
 			</ul>
@@ -305,12 +302,12 @@
 	-->
 	<!-- FOOTER -->
 	<div class="row footer-pad">
-		<div class="large-3 small-6 large-centered small-centered columns">
+		<div class="large-12 small-6 large-centered small-centered columns">
 			<h5 class="center">Thanks for read my file.You can know more about me on below</h5>
 		</div>
 	</div>
 	<div class="row footer-pad">
-		<div class="large-3 small-9 large-centered small-centered columns">
+		<div class="large-12 small-12 large-centered small-centered columns center">
 			<div class="sm-pad">
 				<a href="https://www.facebook.com/kenneth.chan.965" target="_blank"><img class="social_icon" src="img\fb.png" /></a>
 				<a href="https://wp-kkhchan.rhcloud.com" target="_blank"><img class="social_icon" src="img\blog.jpg" /></a>
@@ -341,5 +338,8 @@
   <script>
     $(document).foundation();
   </script>
+  <a href="#img_cover" class="cd-top">
+	<i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </a>
 </body>
 </html>

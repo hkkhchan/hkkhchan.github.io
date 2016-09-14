@@ -3,7 +3,10 @@
 @font-face
 {
 	font-family: Cantarell;
-	src: url('../font/Cantarell-Regular.ttf');
+	src: url('..\font\Cantarell-Regular.ttf');
+}
+*{
+	font-size:120%;
 }
 .transparent {
 	zoom: 1;
@@ -107,4 +110,42 @@ h5{
 }
 #header-text a{
 	margin-right:25px;
+}
+#img_cover{
+	width: 100%;
+}
+.padding_0{
+	padding: 0;
+}
+.row{
+	max-width: 70em;
+}
+
+@-webkit-keyframes move-up {
+	from { top: 14px;color:dodgerblue}
+	99% { -webkit-transform: scale(1, .9);}
+	to { top: -14px; color: rgba(149,196,242,0.5);-webkit-transform: scale(1, .9);}
+}
+.cd-top{
+	position: fixed;
+	display:inline-block;
+	height:75px;
+	width:75px;
+	bottom: 100px;
+	right: 60px;
+	z-index: 10;
+	background-color: rgba(71,223,181,0.6);
+	border-radius: 50%;
+	text-align: center;
+}
+.cd-top i{
+	font-size:240%;
+	position: relative;
+	top: 14px;
+}
+.cd-top i:hover{
+	-webkit-animation-name: move-up;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
 }
