@@ -161,7 +161,7 @@ h5{
 		font-size:1em;
 		margin:0 5px;
 	}
-	.descriptions li{
+	.descriptions li, .intro{
 		font-size:80%;
 	}
 	h5{
