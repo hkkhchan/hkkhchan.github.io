@@ -10,6 +10,8 @@
 1. 用svg 來展示大logo
 1. skillset 可以用progress bar之類來展示
 1. ~~加個go to top的button~~ done
+1. 加一個右拉式選單 for web responsive design
+1. 浮動連結,並利用scroll bar判斷作用的連結
 
 ### 重大更新:
 1. 13/9正式上傳
