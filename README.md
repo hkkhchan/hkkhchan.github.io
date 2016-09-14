@@ -9,8 +9,9 @@
 1. 希望加入css animation
 1. 用svg 來展示大logo
 1. skillset 可以用progress bar之類來展示
-1. 加個go to top的button
+1. ~~加個go to top的button~~ done
 
 ### 重大更新:
-1. 14/9正式上傳
+1. 13/9正式上傳
+1. 14/9加入go to top的button
 
