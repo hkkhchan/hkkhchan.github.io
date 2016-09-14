@@ -3,7 +3,7 @@
 @font-face
 {
 	font-family: Cantarell;
-	src: url('..\font\Cantarell-Regular.ttf');
+	src: url('cantarell-Regular.ttf');
 }
 *{
 	font-size:120%;
