@@ -73,7 +73,8 @@ ul.descriptions {
 }
 ul.descriptions li {
 	margin: 0 0 0 1em;
-	text-indent: -2.9em; 
+	text-indent: -2.9em;
+	word-wrap: break-word;
 }
 ul.descriptions li:before
 {
