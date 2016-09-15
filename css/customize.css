@@ -35,13 +35,15 @@ h6{
 	letter-spacing: 20px;
 }
 
-.personal-pic {
-	border: 2px solid #777777;
-	-webkit-clip-path:circle(42% at 48% 45%);
+.personal-pic, .personal-pic-large {
+	display:inline-block;
+	background-image: url('../img/kenneth.jpg');
+	width:195px;
+	height:195px;
+	border-radius: 50%;
 }
 .personal-pic-large {
 	margin: 10px 0 20px 15px;
-	-webkit-clip-path:circle(42% at 48% 45%);
 }
 .skills-list {
 	text-align: center;
