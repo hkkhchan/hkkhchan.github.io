@@ -118,6 +118,8 @@ h5{
 	width: 100%;
 	-webkit-clip-path: polygon(100% 0,100% 84%,50% 100%,0 84%,0 0);
 	clip-path: polygon(100% 0,100% 84%,50% 100%,0 84%,0 0);
+	-webkit-clip-path: url('#clip-shape');
+	clip-path: url('#clip-shape');
 }
 .padding_0{
 	padding: 0;
