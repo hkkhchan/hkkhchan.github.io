@@ -22,9 +22,7 @@
 body {
 	font-family: Cantarell, Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }	
-/*h1, h2, h3, h4, h5, h6 {
-	font-family: Cambria, Georgia, serif;
-}*/
+
 h6{
 	text-indent: 15px;
 }
@@ -174,4 +172,8 @@ h5{
 	h6{
 		font-size:0.8em;
 	}
+    .cd-top{
+        right: 30px;
+        bottom: 50px;
+    }
 }
