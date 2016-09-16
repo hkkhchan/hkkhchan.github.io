@@ -16,4 +16,4 @@
 ### 重大更新:
 1. 13/9正式上傳
 1. 14/9加入go to top的button  
-1. 15/9封面的clip-path完成. 只能實現chrome和firefox.  
+1. 15/9封面的clip-path完成. 但不能實現ie/edge.  
