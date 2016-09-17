@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+setTimeout(function(){
 		const $=jQuery;
 		var offset = 220;
 		var duration = 500;
@@ -17,4 +17,4 @@ jQuery(document).ready(function(){
 		})
 		
 		
-});
+},1000);
