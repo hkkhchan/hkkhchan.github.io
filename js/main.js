@@ -30,7 +30,6 @@ jQuery(document).ready(function($){
             e.preventDefault();
             setTimeout(function(){$('.cd-overlay').click();},100);
             searched=$('li:contains("'+str+'"),p:contains("'+str+'")');
-            debugger;
             $('html, body').animate({scrollTop: searched.offset().top-300}, duration);
             return false;
         }
