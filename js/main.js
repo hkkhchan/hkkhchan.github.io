@@ -30,7 +30,7 @@ jQuery(document).ready(function($){
             e.preventDefault();
             setTimeout(function(){$('.cd-overlay').click();},100);
             searched=$('li:contains("'+str+'"),p:contains("'+str+'")');
-            $('html, body').animate({scrollTop: searched.offset().top-300}, duration);
+            $('html, body').animate({scrollTop: searched.offset().top-400}, duration);
             return false;
         }
     });
