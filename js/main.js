@@ -24,6 +24,20 @@ jQuery(document).ready(function($){
     $(window).on('resize', function(){
         (!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
     });
+    $('#search').keypress(function(e){
+        if (e.keyCode==13 || e.which==13){
+            str=$(this).val();
+            e.preventDefault();
+            setTimeout(function(){$('.cd-overlay').click();},100);
+            searched=$('li:contains("'+str+'"),p:contains("'+str+'")');
+            debugger;
+            $('html, body').animate({scrollTop: searched.offset().top-300}, duration);
+            return false;
+        }
+    });
+    $('body').click(function(){
+        //add later
+    });
 
     $('.cd-nav-trigger').on('click', function(event){
         event.preventDefault();
@@ -112,6 +126,7 @@ jQuery(document).ready(function($){
             $('.cd-search').removeClass('is-visible');
             $('.cd-search-trigger').removeClass('search-is-visible');
             $('.cd-overlay').removeClass('search-is-visible');
+            
         } else {
             //toggle search visibility
             $('.cd-search').toggleClass('is-visible');
