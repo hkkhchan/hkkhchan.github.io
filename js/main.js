@@ -131,7 +131,8 @@ jQuery(document).ready(function($){
             $('.cd-search').toggleClass('is-visible');
             $('.cd-search-trigger').toggleClass('search-is-visible');
             $('.cd-overlay').toggleClass('search-is-visible');
-            if($(window).width() > MqL && $('.cd-search').hasClass('is-visible')) $('.cd-search').find('input[type="search"]').focus();
+            //if($(window).width() > MqL && $('.cd-search').hasClass('is-visible')) $('.cd-search').find('input[type="search"]').focus();
+            $('.cd-search').find('input[type="search"]').focus();
             ($('.cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible') ;
         }
     }
