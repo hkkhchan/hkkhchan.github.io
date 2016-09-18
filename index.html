@@ -2,24 +2,23 @@
 <!--[if IE 8]>                  <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-  <title>Kenneth Chan Kin Hei, Programmer</title>
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/customize.css">
-  <script async src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script async src="https://use.fontawesome.com/90141f997e.js"></script>
-<!--
-  <script async src="js/vendor/custom.modernizr.js"></script>
-  <script src="js/vendor/zepto.js"></script>
-  <script src="js/foundation.min.js"></script>
-  <script async src="js/foundation/foundation.clearing.js"></script>
-  -->
-  <script async src="js/custom.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <title>Kenneth Chan Kin Hei, Programmer</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/customize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->  
+    <script async src="https://use.fontawesome.com/90141f997e.js"></script>
 </head>
-<body>
-    <!-- HEADER -->
+<body class="nav-is-fixed">
+    <header class="cd-main-header">
+        <ul class="cd-header-buttons">
+            <li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
+            <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+        </ul> <!-- cd-header-buttons -->
+    </header>
+    <main class="cd-main-content">
     <div class="row" style="margin-top:-40px;max-width:100%;">
         <div class="large-12 columns padding_0">
             <svg width="0" height="0">
@@ -32,7 +31,7 @@
             <img id="img_cover" src="img/sc_park.jpg" style="clip-path: url('#clip-shape');"/>
         </div>
     </div>
-    <div class="row">
+    <div id="-contact" class="row">
         <div class="large-12 large-centered columns light-topic"  style="margin-top: -75px;">
             <p style="text-align: center;" id="header-text"><a href="https://github.com/hkkhchan">GitHub</a> 
              <a href="http://stackoverflow.com/users/5605307/kenneth-chan">StackOverflow</a> 
@@ -56,8 +55,6 @@
                 //--> 
             </script> <br />
             </p>
-            
-            
             <hr />
         </div>
     </div>
@@ -92,11 +89,11 @@
             <p class="intro">Expecting myself be a professional in Programming area, My life will be full of <span class="sm-cap">challenges</span> and endless <span class="sm-cap">learning</span> and <span class="sm-cap">creativity</span>.</p> 
             <p class="intro">Here you’ll find some of my story and achievement.</p>
         </div>
-        <hr />    
-    </div>    
+        <hr />
+    </div>
 
 
-    <div class="row">
+    <div id="-skill" class="row">
         <div class="large-12 columns">
             <h3>Skills</h3>
         </div>
@@ -116,11 +113,10 @@
                 <li class="skill">VBA/Batch script language/GIT</li>
             </ul>
         </div>
-        <hr />    
+        <hr />
     </div>
 
-    <!-- WORK 1 row for each-->    
-    <div class="row">
+    <div id="-experience" class="row">
         <div class="large-12 columns">
             <h3>Work Experience</h3>
         </div>
@@ -228,7 +224,7 @@
     </div>
     <hr />
     <!-- EDUCATION 1 row -->
-    <div class="row">
+    <div id="-education" class="row">
         <div class="large-12 columns">
             <h3>Education</h3>
         </div>
@@ -272,22 +268,22 @@
     </div>    
     <hr />
     <!-- PORTFOLIO 1 row for each-->
-    <div class="row">
+    <div id="-portfolio" class="row">
         <div class="large-12 columns">
             <h3>Portfolio</h3>
         </div>
     </div>
     <div class="row">
         <h5>Portfolio 1 – Web Bookmark System</h5>
-        <a href="http://php-kkhchan.rhcloud.com"><img src="img/php.jpg"></a>
-        <p class="title">Website: <a href="http://php-kkhchan.rhcloud.com">http://php-kkhchan.rhcloud.com</a></p>
+        <a href="//php-kkhchan.rhcloud.com"><img src="img/php.jpg"></a>
+        <p class="title">Website: <a href="//php-kkhchan.rhcloud.com">http://php-kkhchan.rhcloud.com</a></p>
         <p class="descriptions">The main objective of this portfolio is to create a bookmark management system. After the user open an account, he can have his own bookmark. Also I created some crawler so that user can view the weather and also stock price from my website. For the technique used, I purely use php/mysql as back-end development and jquery for front-end. When I develop this website. I tried to use Git for upload file with the webhosting. I use PDO for avoiding SQL injection. This website is in web responsive design even I don’t use bootstrap library.</p>
     </div>
     <hr />
     <div class="row">
         <h5>Portfolio 2 – Web Coding System</h5>
-        <a href="http://dp-kkhchan1.rhcloud.com"><img src="img/dp.jpg"></a>
-        <p class="title">Website: <a href="http://dp-kkhchan1.rhcloud.com">http://dp-kkhchan1.rhcloud.com</a> / </p>
+        <a href="//dp-kkhchan1.rhcloud.com"><img src="img/dp.jpg"></a>
+        <p class="title">Website: <a href="//dp-kkhchan1.rhcloud.com">http://dp-kkhchan1.rhcloud.com</a> / </p>
         <p class="descriptions">The objective is to provide some coding tool to user. I use Drupal as the base and make some change to the theme. This time I tried to avoid using jQuery even Drupal default load it. I use AngularJS to handle data-binding, dialog and also let jquery datatable can work with AngularJS.</p>
     </div>
     <!-- FOOTER -->
@@ -299,11 +295,11 @@
     <div class="row footer-pad">
         <div class="large-12 small-12 large-centered small-centered columns center">
             <div class="sm-pad">
-                <a href="https://www.facebook.com/kenneth.chan.965" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="https://wp-kkhchan.rhcloud.com" target="_blank"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
-                <a href="https://github.com/hkkhchan" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-                <a href="https://hk.linkedin.com/in/mrkhchan" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                <a href="http://stackoverflow.com/users/5605307/kenneth-chan" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                <a href="//www.facebook.com/kenneth.chan.965" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="//wp-kkhchan.rhcloud.com" target="_blank"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+                <a href="//github.com/hkkhchan" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                <a href="//hk.linkedin.com/in/mrkhchan" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="//stackoverflow.com/users/5605307/kenneth-chan" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
@@ -312,9 +308,101 @@
             <p class="centered">&copy; 2016 Kenneth Chan </p>
         </div>
     </div>
+    </main>
+    <div class="cd-overlay"></div>
 
-  <a href="#img_cover" class="cd-top">
-    <i class="fa fa-arrow-up" aria-hidden="true"></i>
-  </a>
+    <nav class="cd-nav">
+        <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+            <li class="has-children">
+                <a href="http://codyhouse.co/?p=409">Profile</a>
+
+                <ul class="cd-secondary-nav is-hidden">
+                    <li class="go-back"><a href="#0">Menu</a></li>
+                    <li class="see-all"><a class="smooth-move" href="#-profile">All Profile</a></li>
+
+                    <li class="has-children">
+                        <a href="//wp-kkhchan.rhcloud.com">Blog</a>
+                        <p class="nav-description">This blog was created by me using Wordpress. The blog was hosted on RedHat cloud with free account. so the loading speed may not good.</p>
+                        <p class="nav-description">The blog record my coding life. I will record how I solve the problem and some note about coding.
+                    </li>
+
+                    <li class="has-children">
+                        <a href="//github.com/hkkhchan">Github</a>
+                        <p class="nav-description">Github contain some personal portfolio and case study. I started using it on 2016. before 2016, I alway use JSFiddle,PHPFiddle, Codepen to test my code</p>
+                        <p class="nav-description">Except It provide a place to record, I also search some useful resource on the Github.
+                    </li>
+
+                    <li class="has-children">
+                        <a href="//stackoverflow.com/users/5605307/kenneth-chan">StackOverflow</a>
+                        <p class="nav-description">StackOverflow is a good website to learn and find some solution of coding. It is a cool site for me to learn from other and read how other think.</p>
+                    </li>
+                    <li class="has-children">
+                        <a href="https://hk.linkedin.com/in/mrkhchan">LinkedIn</a>
+                        <p class="nav-description">Except It is a website to communicate with colleague. The LinkedIn also establish a platform to search the development of IT industry.</p>
+                        <p class="nav-description">I joined the community from it and receive the newsletter for the trend from them.</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="has-children">
+                <a href="#">Portfolio</a>
+
+                <ul class="cd-nav-gallery is-hidden">
+                    <li class="go-back"><a href="#">Menu</a></li>
+                    <li class="see-all"><a class="smooth-move" href="#-portfolio">Browse Portfolio</a></li>
+                    <li>
+                        <a class="cd-nav-item" href="//php-kkhchan.rhcloud.com">
+                            <img src="img/php.jpg" alt="Web Bookmark System">
+                            <h3>Web Bookmark System</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cd-nav-item" href="//dp-kkhchan1.rhcloud.com">
+                            <img src="img/dp.jpg" alt="Web Coding System">
+                            <h3>Web Coding System</h3>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="has-children">
+                <a href="http://codyhouse.co/?p=409">Contact Me</a>
+                <ul class="cd-nav-icons is-hidden">
+                    <li class="go-back"><a href="#">Menu</a></li>
+                    <li class="see-all"><a href="#-contact">Browse my Contact</a></li>
+                    <li>
+                        <a class="cd-nav-item" href="mailto:wkkhchan@gmail.com">
+                            <h3>wkkhchan@gmail.com</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cd-nav-item" href="tel:61989727">
+                            <h3>6198 9727</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cd-nav-item" href="//hk.linkedin.com/in/mrkhchan">
+                            <h3>LinkedIn</h3>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul> <!-- primary-nav -->
+    </nav> <!-- cd-nav -->
+
+    <div id="cd-search" class="cd-search">
+        <form>
+            <input type="search" placeholder="Search...">
+        </form>
+    </div>
+    <a href="#img_cover" class="go-top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
