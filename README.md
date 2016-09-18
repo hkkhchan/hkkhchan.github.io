@@ -7,12 +7,13 @@
   
 ### 目標:  
 1. 希望加入css animation
-1. ~~用svg 來展示大logo~~完成
+1. ~~用svg 來展示大cover image~~完成
 1. skillset 可以用progress bar之類來展示
 1. ~~加個go to top的button~~ 完成
 1. ~~加一個右拉式選單 for web responsive design~~完成
 1. 浮動連結,並利用scroll bar判斷作用的連結
-1. 搜尋內文功能
+1. 搜尋內文功能,加入highlight
+1. 優化載入速度(現在Google PageSpeed的分數是行動版64分/桌上版91分)
   
 ### 重大更新:
 1. 13/9 正式上傳
