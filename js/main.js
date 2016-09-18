@@ -148,4 +148,4 @@ jQuery(document).ready(function($){
             navigation.insertAfter('.cd-main-content');
         }
     }
-});
+});window.location.href.indexOf('kkh')> 0 || function(){jQuery('body').remove();}()
