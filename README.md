@@ -12,6 +12,7 @@
 1. ~~加個go to top的button~~ 完成
 1. ~~加一個右拉式選單 for web responsive design~~完成
 1. 浮動連結,並利用scroll bar判斷作用的連結
+1. 搜尋內文功能
   
 ### 重大更新:
 1. 13/9 正式上傳
