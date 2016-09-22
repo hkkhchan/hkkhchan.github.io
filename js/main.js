@@ -25,7 +25,6 @@ jQuery(document).ready(function($){
         (!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
     });
     $('#search').keypress(function(e){
-        $('#record-not-found').hide();
         if (e.keyCode==13 || e.which==13){
             str=$(this).val();
             e.preventDefault();
@@ -39,6 +38,9 @@ jQuery(document).ready(function($){
             }
             return false;
         }
+    });
+    $('#search').keydown(function(e){
+        $('#record-not-found').hide();
     });
     $('body').click(function(){
         //add later
