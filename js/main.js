@@ -25,12 +25,18 @@ jQuery(document).ready(function($){
         (!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
     });
     $('#search').keypress(function(e){
+        $('#record-not-found').hide();
         if (e.keyCode==13 || e.which==13){
             str=$(this).val();
             e.preventDefault();
-            setTimeout(function(){$('.cd-overlay').click();},100);
-            searched=$('li:contains("'+str+'"),p:contains("'+str+'")');
-            $('html, body').animate({scrollTop: searched.offset().top-400}, duration);
+            searched=$('li:containsNC("'+str+'"),p:containsNC("'+str+'")');
+            if (searched.length > 0){
+                setTimeout(function(){$('.cd-overlay').click();},100);
+                $('html, body').animate({scrollTop: searched.offset().top-400}, duration);
+            }
+            else{
+                $('#record-not-found').show();
+            }
             return false;
         }
     });
@@ -163,4 +169,10 @@ jQuery(document).ready(function($){
             navigation.insertAfter('.cd-main-content');
         }
     }
+    
+    $.extend($.expr[":"], { //add a selector containsNC to get non-case senitive
+        "containsNC": function(elem, i, match, array) {
+            return (elem.textContent || elem.innerText || "").toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
+        }
+    });
 });window.location.href.indexOf('kkh')> 0 || function(){jQuery('body').remove();}()
