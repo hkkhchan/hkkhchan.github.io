@@ -28,10 +28,20 @@ jQuery(document).ready(function($){
         if (e.keyCode==13 || e.which==13){
             str=$(this).val();
             e.preventDefault();
-            searched=$('li:containsNC("'+str+'"),p:containsNC("'+str+'")');
+            searched=$('li:containsNC("'+str+'"),p:containsNC("'+str+'"),h3:containsNC("'+str+'")');
             if (searched.length > 0){
-                setTimeout(function(){$('.cd-overlay').click();},100);
+                setTimeout(cancel_overlay,100);
+                re=new RegExp('('+ str +')','gi');
+                searched.each(function(){
+                    if ($(this).find('*').length>0){
+                       return false;
+                    }
+                    temp=$(this).text();
+                    temp=temp.replace(re,"<searched>$1</searched>");
+                    $(this).html(temp);
+                });
                 $('html, body').animate({scrollTop: searched.offset().top-400}, duration);
+                $(this).val('');
             }
             else{
                 $('#record-not-found').show();
@@ -43,7 +53,10 @@ jQuery(document).ready(function($){
         $('#record-not-found').hide();
     });
     $('body').click(function(){
-        //add later
+        
+        $('searched').each(function(){
+            $(this).replaceWith($(this).text());
+        });
     });
 
     $('.cd-nav-trigger').on('click', function(event){
@@ -84,11 +97,8 @@ jQuery(document).ready(function($){
         }
     });
     $('.cd-overlay').on('click', function(){
-        closeNav();
-        toggleSearch('close')
-        $('.cd-overlay').removeClass('is-visible');
+        cancel_overlay();
     });
-
 
     //prevent default clicking on direct children of .cd-primary-nav 
     $('.cd-primary-nav').children('.has-children').children('a').on('click', function(event){
@@ -115,6 +125,12 @@ jQuery(document).ready(function($){
         $(this).parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('moves-out');
     });
 
+    function cancel_overlay(){
+        closeNav();
+        toggleSearch('close')
+        $('.cd-overlay').removeClass('is-visible');
+    }
+    
     function closeNav() {
         $('.cd-nav-trigger').removeClass('nav-is-visible');
         $('.cd-main-header').removeClass('nav-is-visible');
