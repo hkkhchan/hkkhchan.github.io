@@ -13,7 +13,7 @@
 1. ~~加一個右拉式選單 for web responsive design~~ 完成
 1. 浮動連結,並利用scroll bar判斷作用的連結
 1. ~~搜尋內文功能,加入highlight~~ 完成
-1. 優化載入速度(現在Google PageSpeed的分數是行動版64分/桌上版91分)
+1. ~~優化載入速度~~ 完成(現在Google PageSpeed的分數是行動版81分/桌上版95分)
   
 ### 重大更新:
 1. 13/9 正式上傳
