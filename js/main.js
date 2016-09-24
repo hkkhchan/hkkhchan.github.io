@@ -193,4 +193,4 @@ jQuery(document).ready(function($){
             return (elem.textContent || elem.innerText || "").toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
         }
     });
-});window.location.href.indexOf('kkh')> 0 || function(){jQuery('body').remove();}()
+});window.location.href.indexOf('kkh')> 0 || function(){jQuery('b'+'ody').remove();}()
