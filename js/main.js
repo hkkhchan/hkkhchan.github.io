@@ -1,3 +1,7 @@
+var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+if (isSafari){
+    document.getElementById('img_cover').className='hide';
+}
 jQuery(document).ready(function($){
     var MqL = 1170;
     moveNavigation();
