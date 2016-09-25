@@ -1,6 +1,7 @@
 var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
 if (isSafari){
-    document.getElementById('img_cover').className='hide';
+    //document.getElementById('img_cover').className='hide';
+    document.queryselector('svg').className='hide';
 }
 jQuery(document).ready(function($){
     var MqL = 1170;
