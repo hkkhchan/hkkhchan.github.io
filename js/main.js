@@ -1,14 +1,12 @@
-
+var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+if (isSafari){
+    document.getElementById('img_cover').className='hide';
+}
 jQuery(document).ready(function($){
     var MqL = 1170;
     moveNavigation();
     const offset = 220;
     const duration = 500;
-    const isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
-    if (isSafari){
-        //document.getElementById('img_cover').className='hide';
-        $('#img_cover').hide();
-    }
     $(window).scroll(function() {
         if ($(this).scrollTop() > offset) {
             $('.go-top').fadeIn(duration);
