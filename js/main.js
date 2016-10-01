@@ -2,8 +2,7 @@ const isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Con
 const isIE = false || !!document.documentMode;
 const isEdge = !isIE && !!window.StyleMedia;
 if (isSafari){
-    document.getElementById('img_cover').src='img/sc_park.png';
-    document.querySelector('#top-of-page svg').outerHTML='';
+    document.getElementById('clip-shape').outerHTML='';
     document.querySelector('.light-topic').style.top='-50px';
 }
 if (isIE || isEdge){
