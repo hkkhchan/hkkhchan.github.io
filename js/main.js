@@ -3,7 +3,7 @@ const isIE = false || !!document.documentMode;
 const isEdge = !isIE && !!window.StyleMedia;
 if (isSafari){
     document.getElementById('img_cover').className='hide';
-    document.getElementById('img_cover_png').style.display='block';
+    document.getElementById('img_cover_safari').style.display='block';
     //document.querySelector('.light-topic').style.top='-50px';
 }
 if (isIE || isEdge){
