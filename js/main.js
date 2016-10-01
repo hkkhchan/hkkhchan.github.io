@@ -2,7 +2,7 @@ const isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Con
 const isIE = false || !!document.documentMode;
 const isEdge = !isIE && !!window.StyleMedia;
 if (isSafari){
-    document.getElementById('clip-shape').outerHTML='';
+    document.getElementById('clip-shape').parentElement.parentElement.outerHTML='';
     document.querySelector('.light-topic').style.top='-50px';
 }
 if (isIE || isEdge){
