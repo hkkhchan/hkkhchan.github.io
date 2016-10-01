@@ -20,7 +20,8 @@
 1. 14/9 加入go to top的button  
 1. 15/9 封面的clip-path完成. 但不能實現ie/edge.  
 1. 19/9 加入menu
-  
+1. 1/10 封面的clip-path解決瀏覽器兼容問題.   
+
 ### 版本控制:
 1. master: default branch
 1. v1: 新增menu前的branch
