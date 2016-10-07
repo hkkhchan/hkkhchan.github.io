@@ -21,6 +21,7 @@
 1. 15/9 封面的clip-path完成. 但不能實現ie/edge.  
 1. 19/9 加入menu
 1. 1/10 封面的clip-path解決瀏覽器兼容問題.   
+1. 7/10 當menu或搜尋時,隱藏go-top button  
 
 ### 版本控制:
 1. master: default branch
