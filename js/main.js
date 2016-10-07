@@ -65,7 +65,6 @@ jQuery(document).ready(function($){
         $('#record-not-found').hide();
     });
     $('body').click(function(){
-        
         $('searched').each(function(){
             $(this).replaceWith($(this).text());
         });
@@ -85,6 +84,7 @@ jQuery(document).ready(function($){
             });
             toggleSearch('close');
             $('.cd-overlay').addClass('is-visible');
+            $('.go-top').addClass('hide');
         }
     });
 
@@ -93,6 +93,12 @@ jQuery(document).ready(function($){
         event.preventDefault();
         toggleSearch();
         closeNav();
+        if ($('.cd-overlay').hasClass('is-visible')){
+            $('.go-top').addClass('hide');
+        }
+        else{
+            $('.go-top').removeClass('hide');
+        }
     });
 
     //close lateral menu on mobile 
@@ -125,9 +131,11 @@ jQuery(document).ready(function($){
             selected.addClass('selected').next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('moves-out');
             selected.parent('.has-children').siblings('.has-children').children('ul').addClass('is-hidden').end().children('a').removeClass('selected');
             $('.cd-overlay').addClass('is-visible');
+            $('.go-top').addClass('hide');
         } else {
             selected.removeClass('selected').next('ul').addClass('is-hidden').end().parent('.has-children').parent('ul').removeClass('moves-out');
             $('.cd-overlay').removeClass('is-visible');
+            $('.go-top').removeClass('hide');
         }
         toggleSearch('close');
     });
@@ -153,6 +161,7 @@ jQuery(document).ready(function($){
         $('.cd-main-content').removeClass('nav-is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
             $('body').removeClass('overflow-hidden');
         });
+        $('.go-top').removeClass('hide');
     }
 
     function toggleSearch(type) {
@@ -161,7 +170,6 @@ jQuery(document).ready(function($){
             $('.cd-search').removeClass('is-visible');
             $('.cd-search-trigger').removeClass('search-is-visible');
             $('.cd-overlay').removeClass('search-is-visible');
-            
         } else {
             //toggle search visibility
             $('.cd-search').toggleClass('is-visible');
