@@ -1,11 +1,5 @@
-const isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
 const isIE = false || !!document.documentMode;
 const isEdge = !isIE && !!window.StyleMedia;
-if (isSafari){
-    document.getElementById('img_cover').className='hide';
-    document.getElementById('img_cover_safari').style.display='block';
-    //document.querySelector('.light-topic').style.top='-50px';
-}
 if (isIE || isEdge){
     document.getElementById('img_cover').src='img/sc_park.png';
     document.querySelector('.light-topic').style.top='-50px';
@@ -15,6 +9,13 @@ jQuery(document).ready(function($){
     moveNavigation();
     const offset = 220;
     const duration = 500;
+    const isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+
+    if (isSafari){
+        $'#img_cover').addClass('hide');
+        $('#img_cover_safari').show();
+    }
+
     $(window).scroll(function() {
         if ($(this).scrollTop() > offset) {
             $('.go-top').fadeIn(duration);
