@@ -13,6 +13,7 @@ jQuery(document).ready(function($){
 
     if (isSafari){
         $('#img_cover').addClass('hide');
+        $('svg').remove();
         $('#img_cover_safari').show();
     }
 
