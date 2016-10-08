@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
     const isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
 
     if (isSafari){
-        $'#img_cover').addClass('hide');
+        $('#img_cover').addClass('hide');
         $('#img_cover_safari').show();
     }
 
