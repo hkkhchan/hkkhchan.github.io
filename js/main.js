@@ -17,7 +17,8 @@ jQuery(document).ready(function($){
         $('svg').remove();
         $('#img_cover_safari').show();
     }
-
+    $('#loader-wrapper').fadeOut(1000);
+    
     $(window).scroll(function() {
         if ($(this).scrollTop() > offset) {
             $('.go-top').fadeIn(duration);
