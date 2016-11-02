@@ -6,7 +6,7 @@
 這個template, 在github找的. 看coding. 是用了foundation 來處理responsive web design. 沒有其他特別技術.  
   
 ### 目標:  
-1. 希望加入css animation~~ 完成
+1. ~~希望加入css animation~~ 完成
 1. ~~用svg 來展示大cover image~~ 完成
 1. skillset 可以用progress bar之類來展示
 1. ~~加個go to top的button~~ 完成
