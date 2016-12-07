@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css"/>
+		<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+  	<script src="main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"></script>
+	</head>
+	<body>
+    <section class="sortable">
+			<ui class="rowhead">
+				<li class="name">Name</li>
+				<li class="value">Value</li>
+				<li class="action">&nbsp;</li>
+			</ui>
+      <ul class="sortable">
+<?php
+    foreach($items as $key => $item){ ?>
+        <li class="ui-state-default rowdata">
+			    <div class="name"><?=$item['name']?></div>	
+			    <div class="value"><?=$item['value']?></div>	
+			    <div class="action">
+            <input type="hidden" class="sort" value="<?=$item['sort']?>"/>
+				  </div>	
+			  </li>
+<?php } ?>
+     </ul>
+		</section>
+	</body>
+</html>
