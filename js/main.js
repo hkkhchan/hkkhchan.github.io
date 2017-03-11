@@ -9,14 +9,7 @@ jQuery(document).ready(function($){
     moveNavigation();
     const offset = 220;
     const duration = 500;
-    const isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
-    const iOS=/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-    if (isSafari || iOS){
-        $('#img_cover').addClass('hide');
-        $('svg').remove();
-        $('#img_cover_safari').show();
-    }
     $('#loader-wrapper').fadeOut(1000);
     
     $(window).scroll(function() {
